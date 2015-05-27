@@ -11,18 +11,21 @@
 @import "base";
 
 //sprites
-
+@import "social/*.png";
+@include all-social-sprites;
 
 //fonts
-
+@import "fonts/open-sans";
+@import "fonts/helvetica";
 
 //components
 
 
 //widgets
-
+@import "widgets/header";
 
 //layouts
+@import "layouts/home";
 
 
 

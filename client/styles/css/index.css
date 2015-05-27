@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -7197,5 +7198,258 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important;
+  }
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.social-sprite, .social-fb, .home .getting ul li:nth-child(2) a > span, .social-gl, .home .getting ul li:nth-child(3) a > span, .social-mail, .home .getting ul li:nth-child(5) a > span, .social-tw, .home .getting ul li:nth-child(1) a > span {
+  background: url('../../images/social-s5b48de9a9b.png') no-repeat;
+}
+
+.social-fb, .home .getting ul li:nth-child(2) a > span {
+  background-position: 0 -114px;
+}
+
+.social-gl, .home .getting ul li:nth-child(3) a > span {
+  background-position: 0 -38px;
+}
+
+.social-mail, .home .getting ul li:nth-child(5) a > span {
+  background-position: 0 0;
+}
+
+.social-tw, .home .getting ul li:nth-child(1) a > span {
+  background-position: 0 -76px;
+}
+
+@font-face {
+  font-family: "Helvetica Light";
+  src: url('fonts/../../../fonts/helvetica-light/Helvetica-Light.ttf') format('truetype'), url('fonts/../../../fonts/helvetica-light/Helvetica-Light.woff') format('woff'), url('fonts/../../../fonts/helvetica-light/Helvetica-Light.svg') format('svg'), url('fonts/../../../fonts/helvetica-light/Helvetica-Light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: "Helvetica Regular";
+  src: url('fonts/../../../fonts/helvetica-regular/Helvetica.ttf') format('truetype'), url('fonts/../../../fonts/helvetica-regular/Helvetica.woff') format('woff'), url('fonts/../../../fonts/helvetica-regular/Helvetica.svg') format('svg'), url('fonts/../../../fonts/helvetica-regular/Helvetica.otf') format('opentype');
+}
+
+header {
+  max-width: 970px;
+  margin: 0 auto;
+}
+header .btn-style {
+  margin: 0;
+  padding: 47px 31px;
+  background-color: #57baff;
+  -webkit-border-radius: initial;
+  -moz-border-radius: initial;
+  -ms-border-radius: initial;
+  -o-border-radius: initial;
+  border-radius: initial;
+}
+header .btn-style .span-style {
+  width: 37px;
+  height: 6px;
+  background-color: #ffffff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+header a {
+  display: block;
+  font-family: "open sans";
+  font-weight: 600;
+  line-height: 120px;
+  color: #061b2a;
+}
+header a.logo {
+  float: left;
+  margin-top: 35px;
+  width: 228px;
+  height: 42px;
+  background-image: url("../../images/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (max-width: 767px) {
+  header a.logo {
+    width: 47.6%;
+    height: 46px;
+    margin-left: 39px;
+  }
+}
+header .nav-style {
+  float: right;
+  margin: 0;
+  border: none;
+  font-size: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+@media (max-width: 767px) {
+  header .nav-style {
+    width: 100%;
+    padding: 0;
+    background-color: #57baff;
+  }
+}
+header .nav-style li {
+  display: inline-block;
+  margin-right: 30px;
+}
+@media (max-width: 767px) {
+  header .nav-style li {
+    display: block;
+    margin: 0 auto;
+    border-bottom: 4px solid #53b1f2;
+    text-align: center;
+  }
+}
+header .nav-style li:last-child {
+  margin-right: 0;
+}
+header .nav-style li a {
+  font-size: 13px;
+}
+@media (max-width: 767px) {
+  header .nav-style li a {
+    font-family: "Helvetica Light";
+    font-weight: 300;
+    font-size: 40px;
+    color: #fcf7f4;
+  }
+}
+@media (max-width: 380px) {
+  header .nav-style li a {
+    font-size: 30px;
+  }
+}
+
+.home {
+  background-image: url("../../images/top-shadow.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home .getting h2 {
+  margin: 34px 0 0;
+  background-color: #1769a4;
+  font-family: "Helvetica Light";
+  font-size: 44px;
+  line-height: 60px;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .home .getting h2 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 767px) {
+  .home .getting ul {
+    margin-top: 37px;
+  }
+}
+@media (max-width: 380px) {
+  .home .getting ul {
+    width: 100%;
+    margin: 37px auto 0;
+  }
+}
+.home .getting ul li {
+  border: 1px solid #babcbd;
+  margin-top: 9px;
+  background: -webkit-linear-gradient(top, #f0f0f0 0, #cdcdcd 100%);
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.125);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.125);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.home .getting ul li:first-child {
+  margin-top: 0;
+}
+.home .getting ul li span {
+  float: left;
+  width: 48px;
+  height: 38px;
+}
+.home .getting ul li a {
+  display: block;
+  background-image: url("../../images/social/social.png");
+  font-family: "Open sans";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 38px;
+  text-align: center;
+  color: #494a4a;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home .getting ul li a {
+    font-size: 12px;
+  }
+}
+.home .getting ul li:nth-child(1) a > span {
+  background-color: #0aa2e0;
+}
+.home .getting ul li:nth-child(2) a > span {
+  background-color: #3a5591;
+}
+.home .getting ul li:nth-child(3) a > span {
+  background-color: #cd513e;
+}
+.home .getting ul li:nth-child(4) {
+  border: none;
+  background-image: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.home .getting ul li:nth-child(4) p {
+  margin: 0;
+  background-image: url("../../images/or-u-can.png");
+  background-repeat: no-repeat;
+  background-position: 0 45%;
+  background-size: cover;
+  color: #55a4da;
+}
+.home .getting ul li:nth-child(5) a > span {
+  background-color: #3e9ee3;
+}
+.home .getting .monitor {
+  height: 288px;
+  margin-top: 68px;
+  background-image: url("../../images/monitor.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home .getting .monitor {
+    height: 262px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home .getting .monitor {
+    height: 219px;
+  }
+}
+@media (max-width: 767px) {
+  .home .getting .monitor {
+    height: 186px;
+    margin-top: 32px;
+  }
+}
+@media (max-width: 380px) {
+  .home .getting .monitor {
+    height: 113px;
   }
 }

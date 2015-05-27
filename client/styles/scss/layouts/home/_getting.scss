@@ -1,0 +1,117 @@
+.getting {
+
+        h2 {
+            margin: 34px 0 0;
+            background-color: #1769a4;
+            font-family: "Helvetica Light";
+            font-size: 44px;
+            line-height: 60px;
+            color: #ffffff;
+            @include breakpoint(extra-small) {
+                font-size: 38px;
+            }
+        }
+
+    ul {
+        @include breakpoint(extra-small) {
+            margin-top: 37px;
+        }
+        @media(max-width: 380px) {
+            width: 100%;
+            margin: 37px auto 0;
+        }
+
+        li {
+            border: 1px solid #babcbd;
+            margin-top: 9px;
+            background: -webkit-linear-gradient(top, #f0f0f0 0, #cdcdcd 100%);
+            text-align: center;
+            @include box-shadow(0px 2px 1px rgba(0, 0, 0, 0.125));
+            @include border-radius(3px);
+            //@include background-image(radial-gradient(top, #f0f0f0 0,#cdcdcd 100%));
+
+            &:first-child {
+                margin-top: 0;
+            }
+            span {
+                float: left;
+                width: 48px;
+                height: 38px;
+            }
+            a {
+
+                display: block;
+                background-image: url("../../images/social/social.png");
+                font-family: "Open sans";
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 38px;
+                text-align: center;
+                color: #494a4a;
+                @include breakpoint(medium) {
+                    font-size: 12px;
+                }
+            }
+            &:nth-child(1) {
+                a > span {
+                    background-color: #0aa2e0;
+                    @extend .social-tw;
+                }
+            }
+
+            &:nth-child(2) {
+                a > span {
+                    background-color: #3a5591;
+                    @extend .social-fb;
+                }
+            }
+
+            &:nth-child(3) {
+                a > span {
+                    background-color: #cd513e;
+                    @extend .social-gl;
+                }
+            }
+            &:nth-child(4) {
+                border: none;
+                background-image: none;
+                @include box-shadow(none);
+                p {
+                    margin: 0;
+                    background-image: url("../../images/or-u-can.png");
+                    background-repeat: no-repeat;
+                    background-position: 0 45%;
+                    background-size: cover;
+                    color: #55a4da;
+                }
+            }
+            &:nth-child(5) {
+                a > span {
+                    background-color: #3e9ee3;
+                    @extend .social-mail;
+                }
+            }
+        }
+    }
+    .monitor {
+        height: 288px;
+        margin-top: 68px;
+        background-image: url("../../images/monitor.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        @include breakpoint(medium) {
+            height: 262px;
+        }
+        @include breakpoint(small) {
+            height: 219px;
+        }
+        @include breakpoint(extra-small) {
+            height: 186px;
+            margin-top: 32px;
+        }
+        @include breakpoint(s-extra-small){
+            height: 113px;
+        }
+    }
+
+}

@@ -15,5 +15,9 @@
         @media (max-width: 767px) {
             @content;
         }
+    } @else if $point == s-extra-small {
+        @media (max-width: 380px) {
+            @content;
+        }
     }
 }
