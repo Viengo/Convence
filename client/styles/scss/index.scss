@@ -1,7 +1,6 @@
 //libs
 @import "compass/reset";
 @import "compass/css3";
-@import "compass/utilities/sprites";
 @import "bootstrap";
 
 //mixins
@@ -9,10 +8,6 @@
 @import "mixins/breakpoints";
 
 @import "base";
-
-//sprites
-@import "social/*.png";
-@include all-social-sprites;
 
 //fonts
 @import "fonts/open-sans";

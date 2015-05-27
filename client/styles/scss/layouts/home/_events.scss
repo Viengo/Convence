@@ -1,0 +1,78 @@
+.events {
+    background-color: #3aa5f1;
+    background-image: url("../../images/backgrounds/shadow-events.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    .container-events {
+        max-width: 970px;
+        margin: 0 auto;
+        padding: 110px 15px 170px;
+        @include breakpoint(small) {
+            padding: 50px 15px 105px;
+        }
+        h2 {
+            margin-bottom: 0;
+            font-family: "Helvetica Light";
+            font-weight: 300;
+            font-size: 36px;
+            color: #fafbfc;
+            @include breakpoint(extra-small) {
+                font-size: 24px;
+            }
+        }
+    }
+    .wrapper {
+        margin: 0 auto;
+        font-size: 0;
+        text-align: left;
+        @include breakpoint(medium) {
+            text-align: center;
+        }
+
+        figure {
+            display: inline-block;
+            max-width: 265px;
+            margin: 70px 50px 0 0;
+            vertical-align: top;
+            text-align: center;
+            @include breakpoint(medium) {
+                max-width: 205px;
+            }
+            @include breakpoint(small) {
+                display: block;
+                max-width: 500px;
+                margin: 50px auto 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+                @include breakpoint(small) {
+                    margin-right: auto;
+                }
+            }
+
+            figcaption {
+                color: #ffffff;
+
+                h3 {
+                    margin: 25px 0 0;
+                    font-family: "Helvetica Light";
+                    font-weight: 300;
+                    font-size: 26px;
+                }
+
+                p {
+                    margin: 25px 0 0;
+                    font-family: "Helvetica";
+                    font-weight: 400;
+                    font-size: 16px;
+                    @include breakpoint(small) {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

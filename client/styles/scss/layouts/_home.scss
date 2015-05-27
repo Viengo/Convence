@@ -1,8 +1,9 @@
 .home{
-    background-image: url("../../images/top-shadow.png");
+    background-image: url("../../images/backgrounds/shadow-top.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
 
     @import "home/getting";
+    @import "home/events";
 }
