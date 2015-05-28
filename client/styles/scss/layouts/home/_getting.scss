@@ -7,33 +7,31 @@
             font-size: 44px;
             line-height: 60px;
             color: #ffffff;
-            @include breakpoint(small) {
+            @include breakpoint(extra-small) {
                 font-size: 38px;
             }
-            @include breakpoint(extra-small) {
+            @include breakpoint(s-extra-small) {
                 font-size: 28px;
                 line-height: 30px;
             }
         }
 
     ul {
-        @include breakpoint(small) {
+        @include breakpoint(extra-small) {
             margin-top: 37px;
         }
-        @include breakpoint(extra-small){
+        @include breakpoint(s-extra-small){
             width: 100%;
             margin: 37px 0 0;
         }
 
         li {
-            border: 1px solid #babcbd;
+            overflow: hidden;
             margin-top: 9px;
-            background: -webkit-linear-gradient(top, #f0f0f0 0, #cdcdcd 100%);
+            border: 1px solid rgba(#000000, 0.1);
             text-align: center;
-            @include box-shadow(0px 2px 1px rgba(0, 0, 0, 0.125));
-            @include border-radius(3px);
-            //@include background-image(radial-gradient(top, #f0f0f0 0,#cdcdcd 100%));
-            @include breakpoint(small) {
+            @include border-radius(4px);
+            @include breakpoint(extra-small) {
                 margin-top: 19px;
             }
 
@@ -41,40 +39,41 @@
                 margin-top: 0;
             }
 
-            span {
-                float: left;
-                width: 48px;
-                height: 38px;
-                background-image: url("../../images/sprites/social.png");
-                background-size: cover;
-                @include breakpoint(small) {
-                    width: 75px;
-                    height: 60px;
-                    padding: 10px;
-                }
-            }
-            a {
-                display: block;
-                font-family: "Open sans";
-                font-weight: 600;
+
+            .button {
                 font-size: 13px;
                 line-height: 38px;
                 text-align: center;
                 color: #494a4a;
-                @include breakpoint(small) {
+                @include breakpoint(extra-small) {
                     font-size: 20px;
                     line-height: 60px;
                 }
-                @include breakpoint(extra-small) {
+                @include breakpoint(s-extra-small) {
                     font-size: 14px;
                     line-height: 60px;
+                }
+                span {
+                    float: left;
+                    width: 48px;
+                    height: 38px;
+                    border-top: 1px rgba(#ffffff, 0.5) solid;
+                    border-right: 1px rgba(#000000, 0.2) solid;
+                    border-bottom: 1px rgba(#000000, 0.2) solid;
+                    background-image: url("../../images/sprites/social.png");
+                    background-size: cover;
+                    @include breakpoint(extra-small) {
+                        width: 75px;
+                        height: 60px;
+                        padding: 10px;
+                    }
                 }
             }
             &:nth-child(1) {
                 a > span {
                     background-color: #0aa2e0;
                     background-position: 0 -76px;
-                    @include breakpoint(small) {
+                    @include breakpoint(extra-small) {
                     background-position: 0 -116px;
                     }
                 }
@@ -84,7 +83,7 @@
                 a > span {
                     background-color: #3a5591;
                     background-position: 0 -114px;
-                    @include breakpoint(small) {
+                    @include breakpoint(extra-small) {
                         background-position: 0 -178px;
                     }
                 }
@@ -94,7 +93,7 @@
                 a > span {
                     background-color: #cd513e;
                     background-position: 0 -38px;
-                    @include breakpoint(small) {
+                    @include breakpoint(extra-small) {
                         background-position: 0 -58px;
                     }
                 }
@@ -111,7 +110,7 @@
                     background-position: 0 45%;
                     background-size: cover;
                     color: #55a4da;
-                    @include breakpoint(small) {
+                    @include breakpoint(extra-small) {
                         font-size: 20px;
                     }
                 }
@@ -127,17 +126,17 @@
     .monitor {
         height: 288px;
         margin-top: 68px;
-        @include breakpoint(large) {
+        @include breakpoint(medium) {
             height: 262px;
         }
-        @include breakpoint(medium) {
+        @include breakpoint(small) {
             height: 219px;
         }
-        @include breakpoint(small) {
+        @include breakpoint(extra-small) {
             height: 186px;
             margin-top: 32px;
         }
-        @include breakpoint(extra-small){
+        @include breakpoint(s-extra-small){
             width: 100%;
             margin: 32px auto 0;
             height: 113px;

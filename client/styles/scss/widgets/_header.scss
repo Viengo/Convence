@@ -5,14 +5,20 @@ header {
     .btn-style {
         margin: 0;
         padding: 47px 31px;
-        background-color: #57baff;
-        @include border-radius(initial);
-
         .span-style {
             width: 37px;
             height: 6px;
-            background-color: #ffffff;
+            background-color: #d2d4d4;
             @include border-radius(2px);
+        }
+
+        &:hover, &:focus {
+            background-color: #57baff;
+            @include border-radius(initial);
+
+            .span-style {
+                background-color: #ffffff;
+            }
         }
     }
 
@@ -31,10 +37,10 @@ header {
             background-image: url("../../images/logo/logo.png");
             background-repeat: no-repeat;
             background-size: contain;
-            @include breakpoint(medium) {
+            @include breakpoint(small) {
                 margin-left: 39px;
             }
-            @include breakpoint(small) {
+            @include breakpoint(extra-small) {
                 width: 47.6%;
                 height: 46px;
                 margin-left: 39px;
@@ -50,7 +56,7 @@ header {
         border: none;
         font-size: 0;
         @include box-shadow(none);
-        @include breakpoint(small) {
+        @include breakpoint(extra-small) {
             width: 100%;
             padding: 0;
             background-color: #57baff;
@@ -59,7 +65,7 @@ header {
         li {
             display: inline-block;
             margin-right: 30px;
-            @include breakpoint(small) {
+            @include breakpoint(extra-small) {
                 display: block;
                 margin: 0 auto;
                 border-bottom: 4px solid #53b1f2;
@@ -72,13 +78,13 @@ header {
 
             a {
                 font-size: 13px;
-                @include breakpoint(small) {
+                @include breakpoint(extra-small) {
                     font-family: "Helvetica Light";
                     font-weight: 300;
                     font-size: 40px;
                     color: #fcf7f4;
                 }
-                @include breakpoint(extra-small){
+                @include breakpoint(s-extra-small) {
                     font-size: 30px;
                 }
 

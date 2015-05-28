@@ -1,0 +1,72 @@
+.tour {
+    padding: 38px 0;
+    background-color: #14629a;
+    @include breakpoint(small){
+        padding: 50px 0;
+    }
+    @include breakpoint(extra-small){
+        padding: 90px 0 95px;
+    }
+
+    .tour-container {
+        padding: 0;
+        @include breakpoint(small){
+            padding: 0 15px;
+        }
+        @include breakpoint(extra-small){
+            padding: 0 15px;
+        }
+
+        h2 {
+            margin: 0;
+            font-family: "Helvetica Light";
+            font-weight: 300;
+            font-size: 23.9px;
+            line-height: 58px;
+            color: #fafbfc;
+            @include breakpoint(medium){
+                font-size: 19px;
+            }
+            @include breakpoint(small){
+                font-size: 40px;
+                text-align: center;
+            }
+            @include breakpoint(extra-small){
+                font-size: 40px;
+                text-align: center;
+            }
+            @include breakpoint(s-extra-small){
+                font-size: 35px;
+                line-height: 40px;
+                text-align: center;
+            }
+        }
+        .wave{
+            height: 58px;
+            background-image: url("../../images/shape.png");
+            background-repeat: no-repeat;
+            background-position: 0 65%;
+            background-size: contain;
+        }
+
+        .button{
+            background-color: #ffffff;
+            line-height: 58px;
+            @include background-image(radial-gradient(top, rgba(#f6f6f6, 0.6) 0, rgba(#b8babb, 1) 100%));
+            @include breakpoint(small){
+                margin-top: 55px;
+                font-size: 30px;
+                line-height: 80px;
+            }
+            @include breakpoint(extra-small){
+                margin-top: 55px;
+                font-size: 30px;
+                line-height: 115px;
+            }
+            &:hover{
+                @include background-image(radial-gradient(top, rgba(#f6f6f6, 1) 0, rgba(#b8babb, 0.6) 100%));
+            }
+        }
+
+    }
+}
