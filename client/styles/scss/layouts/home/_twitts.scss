@@ -9,6 +9,7 @@
     .twitter-logo {
         width: 37px;
         height: 31px;
+        @include user-select(none);
         @include breakpoint(extra-small) {
             width: 74px;
             height: 62px;
@@ -17,9 +18,7 @@
 
     h2 {
         margin: 0;
-        font-family: "Helvetica Light";
         font-size: 24px;
-        color: #fafbfc;
         @include breakpoint(extra-small) {
             font-size: 48px;
         }
@@ -27,6 +26,7 @@
             font-size: 24px;
         }
     }
+
     .reviews {
         padding: 0;
         @include breakpoint(small) {
@@ -38,14 +38,17 @@
         @include breakpoint(s-extra-small) {
             padding: 0 15px;
         }
+
         figure {
             margin-top: 32px;
             @include breakpoint(s-extra-small) {
                 width: 100%;
                 margin-left: 0;
             }
+
             img {
                 width: 70px;
+                @include user-select(none);
                 @include box-shadow(1px 2px 1px rgba(0, 0, 0, 0.125));
                 @include breakpoint(medium) {
                     width: 51px;
@@ -86,6 +89,7 @@
                     width: 62.97%;
                     padding: 15px 10px 10px 10px;
                 }
+
                 &::after {
                     content: '';
                     position: absolute;
@@ -113,11 +117,14 @@
             }
 
             &.left {
+
                 img {
                     float: left
                 }
+
                 figcaption {
                     float: right;
+
                     &::after {
                         left: -8px;
                         @include breakpoint(extra-small) {
@@ -143,6 +150,7 @@
                 }
 
                 figcaption {
+
                     float: left;
 
                     &::after {

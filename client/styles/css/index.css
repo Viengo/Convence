@@ -7206,6 +7206,16 @@ button.close {
   clear: both;
 }
 
+h1, h2, h3, h4 {
+  font-family: "Helvetica Light";
+  color: #ffffff;
+}
+
+a {
+  font-family: "Open sans";
+  font-weight: 600;
+}
+
 a, a:hover {
   text-decoration: none;
 }
@@ -7220,12 +7230,32 @@ a, a:hover {
   src: url('fonts/../../../fonts/helvetica-regular/Helvetica.ttf') format('truetype'), url('fonts/../../../fonts/helvetica-regular/Helvetica.woff') format('woff'), url('fonts/../../../fonts/helvetica-regular/Helvetica.svg') format('svg'), url('fonts/../../../fonts/helvetica-regular/Helvetica.otf') format('opentype');
 }
 
+.logo {
+  float: left;
+  display: block;
+  margin-top: 35px;
+  width: 228px;
+  height: 42px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .button {
   display: block;
   font-family: "Open sans";
   font-weight: 600;
   text-align: center;
   color: #494a4a;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -7278,19 +7308,11 @@ header .btn-style:hover .span-style, header .btn-style:focus .span-style {
 }
 header a {
   display: block;
-  font-family: "open sans";
-  font-weight: 600;
   line-height: 120px;
   color: #061b2a;
 }
 header a.logo {
-  float: left;
-  margin-top: 35px;
-  width: 228px;
-  height: 42px;
   background-image: url("../../images/logo/logo.png");
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   header a.logo {
@@ -7351,42 +7373,76 @@ header .nav-style li a {
   }
 }
 
+footer {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 767px) {
+  footer {
+    padding: 90px 0 40px;
+  }
+}
+footer .logo {
+  background-image: url("../../images/logo/logo-footer.png");
+}
+@media (max-width: 767px) {
+  footer .logo {
+    float: none;
+    margin: 0 auto;
+  }
+}
+footer p {
+  float: right;
+  font-family: "open sans";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 117px;
+  color: #494a4a;
+}
+@media (max-width: 767px) {
+  footer p {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
 .home {
   background-image: url("../../images/backgrounds/shadow-top.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.home .getting h2 {
-  margin: 34px 0 0;
+.home .sign-in h2 {
+  padding: 10px 0;
   background-color: #1769a4;
-  font-family: "Helvetica Light";
-  font-size: 44px;
+  font-size: 43.2px;
   line-height: 60px;
-  color: #ffffff;
 }
 @media (max-width: 767px) {
-  .home .getting h2 {
+  .home .sign-in h2 {
     font-size: 38px;
+    text-align: center;
   }
 }
 @media (max-width: 600px) {
-  .home .getting h2 {
+  .home .sign-in h2 {
     font-size: 28px;
     line-height: 30px;
   }
 }
 @media (max-width: 767px) {
-  .home .getting ul {
+  .home .sign-in ul {
     margin-top: 37px;
   }
 }
 @media (max-width: 600px) {
-  .home .getting ul {
+  .home .sign-in ul {
     width: 100%;
     margin: 37px 0 0;
   }
 }
-.home .getting ul li {
+.home .sign-in ul li {
   overflow: hidden;
   margin-top: 9px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -7398,32 +7454,31 @@ header .nav-style li a {
   border-radius: 4px;
 }
 @media (max-width: 767px) {
-  .home .getting ul li {
+  .home .sign-in ul li {
     margin-top: 19px;
   }
 }
-.home .getting ul li:first-child {
+.home .sign-in ul li:first-child {
   margin-top: 0;
 }
-.home .getting ul li .button {
+.home .sign-in ul li .button {
   font-size: 13px;
   line-height: 38px;
-  text-align: center;
   color: #494a4a;
 }
 @media (max-width: 767px) {
-  .home .getting ul li .button {
+  .home .sign-in ul li .button {
     font-size: 20px;
     line-height: 60px;
   }
 }
 @media (max-width: 600px) {
-  .home .getting ul li .button {
+  .home .sign-in ul li .button {
     font-size: 14px;
     line-height: 60px;
   }
 }
-.home .getting ul li .button span {
+.home .sign-in ul li .button span {
   float: left;
   width: 48px;
   height: 38px;
@@ -7434,93 +7489,98 @@ header .nav-style li a {
   background-size: cover;
 }
 @media (max-width: 767px) {
-  .home .getting ul li .button span {
+  .home .sign-in ul li .button span {
     width: 75px;
     height: 60px;
     padding: 10px;
   }
 }
-.home .getting ul li:nth-child(1) a > span {
+.home .sign-in ul li:nth-child(1) a > span {
   background-color: #0aa2e0;
   background-position: 0 -76px;
 }
 @media (max-width: 767px) {
-  .home .getting ul li:nth-child(1) a > span {
+  .home .sign-in ul li:nth-child(1) a > span {
     background-position: 0 -116px;
   }
 }
-.home .getting ul li:nth-child(2) a > span {
+.home .sign-in ul li:nth-child(2) a > span {
   background-color: #3a5591;
   background-position: 0 -114px;
 }
 @media (max-width: 767px) {
-  .home .getting ul li:nth-child(2) a > span {
+  .home .sign-in ul li:nth-child(2) a > span {
     background-position: 0 -178px;
   }
 }
-.home .getting ul li:nth-child(3) a > span {
+.home .sign-in ul li:nth-child(3) a > span {
   background-color: #cd513e;
   background-position: 0 -38px;
 }
 @media (max-width: 767px) {
-  .home .getting ul li:nth-child(3) a > span {
+  .home .sign-in ul li:nth-child(3) a > span {
     background-position: 0 -58px;
   }
 }
-.home .getting ul li:nth-child(4) {
+.home .sign-in ul li:nth-child(4) {
   border: none;
   background-image: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.home .getting ul li:nth-child(4) p {
+.home .sign-in ul li:nth-child(4) p {
   margin: 0;
   font-size: 13px;
-  background-image: url("../../images/or-u-can.png");
+  background-image: url("../../images/backgrounds/or-u-can.png");
   background-repeat: no-repeat;
   background-position: 0 45%;
   background-size: cover;
   color: #55a4da;
 }
 @media (max-width: 767px) {
-  .home .getting ul li:nth-child(4) p {
+  .home .sign-in ul li:nth-child(4) p {
     font-size: 20px;
   }
 }
-.home .getting ul li:nth-child(5) a > span {
+.home .sign-in ul li:nth-child(5) a > span {
   background-color: #3e9ee3;
   background-position: 0 0;
 }
-.home .getting .monitor {
+.home .sign-in .monitor {
   height: 288px;
   margin-top: 68px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .home .getting .monitor {
+  .home .sign-in .monitor {
     height: 262px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .home .getting .monitor {
+  .home .sign-in .monitor {
     height: 219px;
   }
 }
 @media (max-width: 767px) {
-  .home .getting .monitor {
+  .home .sign-in .monitor {
     height: 186px;
     margin-top: 32px;
   }
 }
 @media (max-width: 600px) {
-  .home .getting .monitor {
+  .home .sign-in .monitor {
     width: 100%;
     margin: 32px auto 0;
     height: 113px;
   }
 }
-.home .getting .monitor img {
+.home .sign-in .monitor img {
   width: 100%;
   height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .home .events {
   background-color: #3aa5f1;
@@ -7541,10 +7601,7 @@ header .nav-style li a {
 }
 .home .events .container-events h2 {
   margin-bottom: 0;
-  font-family: "Helvetica Light";
-  font-weight: 300;
   font-size: 36px;
-  color: #fafbfc;
 }
 @media (max-width: 600px) {
   .home .events .container-events h2 {
@@ -7588,13 +7645,18 @@ header .nav-style li a {
     margin-right: auto;
   }
 }
+.home .events .wrapper figure img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .home .events .wrapper figure figcaption {
   color: #ffffff;
 }
 .home .events .wrapper figure figcaption h3 {
   margin: 25px 0 0;
-  font-family: "Helvetica Light";
-  font-weight: 300;
   font-size: 26px;
 }
 .home .events .wrapper figure figcaption p {
@@ -7619,6 +7681,11 @@ header .nav-style li a {
 .home .twitts .twitter-logo {
   width: 37px;
   height: 31px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @media (max-width: 767px) {
   .home .twitts .twitter-logo {
@@ -7628,9 +7695,7 @@ header .nav-style li a {
 }
 .home .twitts h2 {
   margin: 0;
-  font-family: "Helvetica Light";
   font-size: 24px;
-  color: #fafbfc;
 }
 @media (max-width: 767px) {
   .home .twitts h2 {
@@ -7671,6 +7736,11 @@ header .nav-style li a {
 }
 .home .twitts .reviews figure img {
   width: 70px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.125);
   box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.125);
 }
@@ -7813,6 +7883,11 @@ header .nav-style li a {
 .home .tour .tour-container {
   padding: 0;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home .tour .tour-container {
+    padding: 0 15px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .home .tour .tour-container {
     padding: 0 15px;
@@ -7825,11 +7900,8 @@ header .nav-style li a {
 }
 .home .tour .tour-container h2 {
   margin: 0;
-  font-family: "Helvetica Light";
-  font-weight: 300;
   font-size: 23.9px;
   line-height: 58px;
-  color: #fafbfc;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .home .tour .tour-container h2 {
@@ -7857,10 +7929,15 @@ header .nav-style li a {
 }
 .home .tour .tour-container .wave {
   height: 58px;
-  background-image: url("../../images/shape.png");
+  background-image: url("../../images/backgrounds/shape.png");
   background-repeat: no-repeat;
   background-position: 0 65%;
   background-size: contain;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .home .tour .tour-container .button {
   background-color: #ffffff;

@@ -10,6 +10,9 @@
 
     .tour-container {
         padding: 0;
+        @include breakpoint(medium){
+           padding: 0 15px;
+        }
         @include breakpoint(small){
             padding: 0 15px;
         }
@@ -19,11 +22,8 @@
 
         h2 {
             margin: 0;
-            font-family: "Helvetica Light";
-            font-weight: 300;
             font-size: 23.9px;
             line-height: 58px;
-            color: #fafbfc;
             @include breakpoint(medium){
                 font-size: 19px;
             }
@@ -43,10 +43,11 @@
         }
         .wave{
             height: 58px;
-            background-image: url("../../images/shape.png");
+            background-image: url("../../images/backgrounds/shape.png");
             background-repeat: no-repeat;
             background-position: 0 65%;
             background-size: contain;
+            @include user-select(none);
         }
 
         .button{

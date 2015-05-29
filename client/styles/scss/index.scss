@@ -14,10 +14,12 @@
 @import "fonts/helvetica";
 
 //components
+@import "components/logo";
 @import "components/button";
 
 //widgets
 @import "widgets/header";
+@import "widgets/footer";
 
 //layouts
 @import "layouts/home";

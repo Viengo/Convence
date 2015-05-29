@@ -4,6 +4,7 @@
     font-weight: 600;
     text-align: center;
     color: #494a4a;
+    @include user-select(none);
     @include border-radius(4px);
     @include box-shadow(0px 2px 1px rgba(0, 0, 0, 0.3));
     @include background-image(radial-gradient(top, rgba(#f6f6f6, 0.6) 0, rgba(#b8babb, 0.6) 100%));

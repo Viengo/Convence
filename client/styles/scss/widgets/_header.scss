@@ -24,19 +24,11 @@ header {
 
     a {
         display: block;
-        font-family: "open sans";
-        font-weight: 600;
         line-height: 120px;
         color: #061b2a;
 
         &.logo {
-            float: left;
-            margin-top: 35px;
-            width: 228px;
-            height: 42px;
             background-image: url("../../images/logo/logo.png");
-            background-repeat: no-repeat;
-            background-size: contain;
             @include breakpoint(small) {
                 margin-left: 39px;
             }
