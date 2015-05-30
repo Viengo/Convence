@@ -8,24 +8,12 @@
         padding: 90px 0 95px;
     }
 
-    .tour-container {
-        padding: 0;
-        @include breakpoint(medium){
-           padding: 0 15px;
-        }
-        @include breakpoint(small){
-            padding: 0 15px;
-        }
-        @include breakpoint(extra-small){
-            padding: 0 15px;
-        }
-
         h2 {
             margin: 0;
-            font-size: 23.9px;
+            font-size: 23px;
             line-height: 58px;
             @include breakpoint(medium){
-                font-size: 19px;
+                font-size: 18px;
             }
             @include breakpoint(small){
                 font-size: 40px;
@@ -68,6 +56,4 @@
                 @include background-image(radial-gradient(top, rgba(#f6f6f6, 1) 0, rgba(#b8babb, 0.6) 100%));
             }
         }
-
-    }
 }

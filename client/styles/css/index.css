@@ -7281,6 +7281,11 @@ header {
   max-width: 970px;
   margin: 0 auto;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  header {
+    max-width: 750px;
+  }
+}
 header .btn-style {
   margin: 0;
   padding: 47px 31px;
@@ -7312,11 +7317,12 @@ header a {
   color: #061b2a;
 }
 header a.logo {
+  margin-left: 15px;
   background-image: url("../../images/logo/logo.png");
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   header a.logo {
-    margin-left: 39px;
+    margin-left: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -7373,11 +7379,6 @@ header .nav-style li a {
   }
 }
 
-footer {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 @media (max-width: 767px) {
   footer {
     padding: 90px 0 40px;
@@ -7408,13 +7409,12 @@ footer p {
   }
 }
 
-.home {
+.home .shadow {
   background-image: url("../../images/backgrounds/shadow-top.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .home .sign-in h2 {
-  padding: 10px 0;
   background-color: #1769a4;
   font-size: 43.2px;
   line-height: 60px;
@@ -7430,6 +7430,9 @@ footer p {
     font-size: 28px;
     line-height: 30px;
   }
+}
+.home .sign-in ul {
+  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   .home .sign-in ul {
@@ -7707,14 +7710,6 @@ footer p {
     font-size: 24px;
   }
 }
-.home .twitts .reviews {
-  padding: 0;
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .home .twitts .reviews {
-    padding: 0 15px;
-  }
-}
 @media (max-width: 767px) {
   .home .twitts .reviews {
     padding: 0 40px;
@@ -7728,14 +7723,8 @@ footer p {
 .home .twitts .reviews figure {
   margin-top: 32px;
 }
-@media (max-width: 600px) {
-  .home .twitts .reviews figure {
-    width: 100%;
-    margin-left: 0;
-  }
-}
 .home .twitts .reviews figure img {
-  width: 70px;
+  width: 67px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
@@ -7751,7 +7740,7 @@ footer p {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .home .twitts .reviews figure img {
-    width: 64px;
+    width: 96px;
   }
 }
 @media (max-width: 767px) {
@@ -7768,7 +7757,7 @@ footer p {
   position: relative;
   float: right;
   z-index: 1;
-  width: 62.962963%;
+  width: 63.05%;
   padding: 15px 10px 15px 15px;
   border: 1px solid #d4d4d4;
   background-color: #f7f8f8;
@@ -7781,12 +7770,12 @@ footer p {
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .home .twitts .reviews figure figcaption {
-    width: 63.18%;
+    width: 61.88%;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .home .twitts .reviews figure figcaption {
-    width: 72.75%;
+    width: 63.48%;
   }
 }
 @media (max-width: 767px) {
@@ -7880,54 +7869,36 @@ footer p {
     padding: 90px 0 95px;
   }
 }
-.home .tour .tour-container {
-  padding: 0;
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .home .tour .tour-container {
-    padding: 0 15px;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .home .tour .tour-container {
-    padding: 0 15px;
-  }
-}
-@media (max-width: 767px) {
-  .home .tour .tour-container {
-    padding: 0 15px;
-  }
-}
-.home .tour .tour-container h2 {
+.home .tour h2 {
   margin: 0;
-  font-size: 23.9px;
+  font-size: 23px;
   line-height: 58px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
-  .home .tour .tour-container h2 {
-    font-size: 19px;
+  .home .tour h2 {
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .home .tour .tour-container h2 {
+  .home .tour h2 {
     font-size: 40px;
     text-align: center;
   }
 }
 @media (max-width: 767px) {
-  .home .tour .tour-container h2 {
+  .home .tour h2 {
     font-size: 40px;
     text-align: center;
   }
 }
 @media (max-width: 600px) {
-  .home .tour .tour-container h2 {
+  .home .tour h2 {
     font-size: 35px;
     line-height: 40px;
     text-align: center;
   }
 }
-.home .tour .tour-container .wave {
+.home .tour .wave {
   height: 58px;
   background-image: url("../../images/backgrounds/shape.png");
   background-repeat: no-repeat;
@@ -7939,7 +7910,7 @@ footer p {
   -ms-user-select: none;
   user-select: none;
 }
-.home .tour .tour-container .button {
+.home .tour .button {
   background-color: #ffffff;
   line-height: 58px;
   background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 100, color-stop(0%, rgba(246, 246, 246, 0.6)), color-stop(100%, #b8babb));
@@ -7949,20 +7920,20 @@ footer p {
   background-image: radial-gradient(top, rgba(246, 246, 246, 0.6) 0%, #b8babb 100%);
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  .home .tour .tour-container .button {
+  .home .tour .button {
     margin-top: 55px;
     font-size: 30px;
     line-height: 80px;
   }
 }
 @media (max-width: 767px) {
-  .home .tour .tour-container .button {
+  .home .tour .button {
     margin-top: 55px;
     font-size: 30px;
     line-height: 115px;
   }
 }
-.home .tour .tour-container .button:hover {
+.home .tour .button:hover {
   background-image: -webkit-gradient(radial, 50% 0%, 0, 50% 0%, 100, color-stop(0%, #f6f6f6), color-stop(100%, rgba(184, 186, 187, 0.6)));
   background-image: -webkit-radial-gradient(top, #f6f6f6 0%, rgba(184, 186, 187, 0.6) 100%);
   background-image: -moz-radial-gradient(top, #f6f6f6 0%, rgba(184, 186, 187, 0.6) 100%);

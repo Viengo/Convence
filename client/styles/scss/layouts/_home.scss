@@ -1,9 +1,5 @@
 .home{
-    background-image: url("../../images/backgrounds/shadow-top.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
+    @import "home/shadow";
     @import "home/sign-in";
     @import "home/events";
     @import "home/twitts";

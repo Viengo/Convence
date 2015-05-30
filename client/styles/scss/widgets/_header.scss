@@ -1,6 +1,9 @@
 header {
     max-width: 970px;
     margin: 0 auto;
+    @include breakpoint(small){
+        max-width: 750px;
+    }
 
     .btn-style {
         margin: 0;
@@ -28,9 +31,10 @@ header {
         color: #061b2a;
 
         &.logo {
+            margin-left: 15px;
             background-image: url("../../images/logo/logo.png");
-            @include breakpoint(small) {
-                margin-left: 39px;
+            @include breakpoint(medium){
+                margin-left: 100px;
             }
             @include breakpoint(extra-small) {
                 width: 47.6%;

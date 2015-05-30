@@ -1,7 +1,6 @@
 .sign-in{
 
         h2 {
-            padding: 10px 0;
             background-color: #1769a4;
             font-size: 43.2px;
             line-height: 60px;
@@ -16,6 +15,8 @@
         }
 
     ul {
+        margin-bottom: 0;
+
         @include breakpoint(extra-small) {
             margin-top: 37px;
         }

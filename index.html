@@ -11,24 +11,24 @@
     <script src="client/scripts/bootstrap.min.js"></script>
 </head>
 <body class="home">
-<header>
-    <nav class="clearfix">
-        <button type="button" class="navbar-toggle btn-style" data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar span-style"></span>
-            <span class="icon-bar span-style"></span>
-            <span class="icon-bar span-style"></span>
-        </button>
-        <a class="logo" href="javascript:void(0)"></a>
-        <ul class="collapse navbar-collapse nav-style" id="bs-example-navbar-collapse-1">
-            <li><a href="javascript:void(0)">About Convence</a></li>
-            <li><a href="javascript:void(0)">Take the Tour</a></li>
-            <li><a href="javascript:void(0)">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-<main>
+<div class="shadow">
+    <header>
+        <nav class="clearfix">
+            <button type="button" class="navbar-toggle btn-style" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar span-style"></span>
+                <span class="icon-bar span-style"></span>
+                <span class="icon-bar span-style"></span>
+            </button>
+            <a class="logo" href="javascript:void(0)"></a>
+            <ul class="collapse navbar-collapse nav-style" id="bs-example-navbar-collapse-1">
+                <li><a href="javascript:void(0)">About Convence</a></li>
+                <li><a href="javascript:void(0)">Take the Tour</a></li>
+                <li><a href="javascript:void(0)">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <section class="sign-in">
         <div class="container">
             <div class="row">
@@ -51,6 +51,8 @@
             </div>
         </div>
     </section>
+</div>
+<main>
     <section class="events">
         <div class="container-events">
             <h2>Life is full of meetings and events - both personal and professional. Now there's a way to manage,
@@ -94,27 +96,27 @@
 
         <div class="container reviews">
             <div class="row">
-                <figure class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0 left">
+                <figure class="col-lg-3 col-md-3 col-sm-6 col-xs-12 left">
                     <img src="client/images/twitts/photo.png" alt="Avatar"/>
                     <figcaption>
                         <p>Vestibulum viverra, mi ac eleifend egestas, nisi mattis dolor, et volutpat.</p>
                     </figcaption>
                 </figure>
-                <figure class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0 left">
+                <figure class="col-lg-3 col-md-3 col-sm-6 col-xs-12 left">
                     <img src="client/images/twitts/photo.png" alt="Avatar"/>
                     <figcaption>
                         <p>Fusce quis tortor eu erpat dignissim verius et luctus augue. Etiam rhoncus consectetur odio a
                             commodo. in.</p>
                     </figcaption>
                 </figure>
-                <figure class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0 left">
+                <figure class="col-lg-3 col-md-3 col-sm-6 col-xs-12 left">
                     <img src="client/images/twitts/photo.png" alt="Avatar"/>
                     <figcaption>
                         <p>Mauris condimentum nunc eu libero tincidunt non iaculis urna faucibus. Donec blandit
                             ultricies libero non </p>
                     </figcaption>
                 </figure>
-                <figure class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0 left">
+                <figure class="col-lg-3 col-md-3 col-sm-6 col-xs-12 left">
                     <img src="client/images/twitts/photo.png" alt="Avatar"/>
                     <figcaption>
                         <p>Phasellus et neque at neque varius accumsan ultrices vel nulla. Proin ante diam, commodo in
@@ -152,10 +154,10 @@
         </div>
     </section>
     <section class="tour">
-        <div class="container tour-container">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                    <h2>Interested in learning more about Convene? </h2>
+                    <h2>Interested in learning more about Convene?</h2>
                 </div>
                 <div class="col-lg-2 col-md-2 hidden-sm hidden-xs wave"></div>
                 <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 take">
@@ -165,9 +167,12 @@
         </div>
     </section>
 </main>
-<footer class="clearfix">
-    <a class="logo" href="javascript:void(0)"></a>
-    <p>All rights reserved © 2013</p>
+<footer>
+    <div class="container">
+        <a class="logo" href="javascript:void(0)"></a>
+
+        <p>All rights reserved © 2013</p>
+    </div>
 </footer>
 </body>
 </html>

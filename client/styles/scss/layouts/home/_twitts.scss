@@ -28,10 +28,7 @@
     }
 
     .reviews {
-        padding: 0;
-        @include breakpoint(small) {
-            padding: 0 15px;
-        }
+
         @include breakpoint(extra-small) {
             padding: 0 40px;
         }
@@ -41,20 +38,16 @@
 
         figure {
             margin-top: 32px;
-            @include breakpoint(s-extra-small) {
-                width: 100%;
-                margin-left: 0;
-            }
 
             img {
-                width: 70px;
+                width: 67px;
                 @include user-select(none);
                 @include box-shadow(1px 2px 1px rgba(0, 0, 0, 0.125));
                 @include breakpoint(medium) {
                     width: 51px;
                 }
                 @include breakpoint(small) {
-                    width: 64px;
+                    width: 96px;
                 }
                 @include breakpoint(extra-small) {
                     width: 140px;
@@ -69,17 +62,17 @@
                 position: relative;
                 float: right;
                 z-index: 1;
-                width: 62.962963%;
+                width: 63.05%;
                 padding: 15px 10px 15px 15px;
                 border: 1px solid #d4d4d4;
                 background-color: #f7f8f8;
                 text-align: left;
                 @include border-radius(3px);
                 @include breakpoint(medium) {
-                    width: 63.18%;
+                    width: 61.88%;
                 }
                 @include breakpoint(small) {
-                    width: 72.75%;
+                    width: 63.48%;
                 }
                 @include breakpoint(extra-small) {
                     width: 62.4%;
