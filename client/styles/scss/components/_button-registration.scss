@@ -1,0 +1,19 @@
+.button-registration {
+    display: inline-block;
+    width: 50%;
+    border: 1px solid rgba(#000000, 0.2);
+    background-color: #3b9be0;
+    font-size: 15px;
+    line-height: 58px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+    color: #fefefe;
+    @include user-select(none);
+    @include border-radius(4px);
+    @include box-shadow(0px 2px 1px rgba(0, 0, 0, 0.2));
+
+    &:hover {
+        text-decoration: underline;
+        color: #fefefe;
+    }
+}

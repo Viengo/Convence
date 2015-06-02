@@ -1,14 +1,19 @@
 //libs
 @import "compass/reset";
 @import "compass/css3";
+@import "compass/utilities/sprites";
 @import "bootstrap";
 
 //mixins
 @import "mixins/user-select";
 @import "mixins/breakpoints";
+@import "mixins/placeholder";
 
 @import "base";
 
+//sprites
+@import "sprites/sign-up/*.png";
+@include all-sign-up-sprites;
 
 //fonts
 @import "fonts/open-sans";
@@ -17,8 +22,10 @@
 //components
 @import "components/logo";
 @import "components/button";
+@import "components/button-registration";
 
 //widgets
+@import "widgets/sign-up";
 @import "widgets/header";
 @import "widgets/footer";
 

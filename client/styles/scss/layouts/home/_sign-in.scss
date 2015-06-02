@@ -1,18 +1,19 @@
-.sign-in{
+.sign-in {
+    display: block;
 
-        h2 {
-            background-color: #1769a4;
-            font-size: 43.2px;
-            line-height: 60px;
-            @include breakpoint(extra-small) {
-                font-size: 38px;
-                text-align: center;
-            }
-            @include breakpoint(s-extra-small) {
-                font-size: 28px;
-                line-height: 30px;
-            }
+    h2 {
+        background-color: #1769a4;
+        font-size: 43.2px;
+        line-height: 60px;
+        @include breakpoint(extra-small) {
+            font-size: 38px;
+            text-align: center;
         }
+        @include breakpoint(s-extra-small) {
+            font-size: 28px;
+            line-height: 30px;
+        }
+    }
 
     ul {
         margin-bottom: 0;
@@ -20,7 +21,7 @@
         @include breakpoint(extra-small) {
             margin-top: 37px;
         }
-        @include breakpoint(s-extra-small){
+        @include breakpoint(s-extra-small) {
             width: 100%;
             margin: 37px 0 0;
         }
@@ -35,7 +36,6 @@
             &:first-child {
                 margin-top: 0;
             }
-
 
             .button {
                 font-size: 13px;
@@ -71,11 +71,6 @@
                     background-position: 0 -76px;
                     @include breakpoint(extra-small) {
                         background-position: 0 -116px;
-                    }
-                    &.l-in{
-                        background-color: #0a6595;
-                        background-image: url("../../images/sprites/in.png");
-                        background-position: 0 0;
                     }
                 }
             }
@@ -127,9 +122,10 @@
     .monitor {
         margin-top: 68px;
 
-        img{
+        img {
             width: 100%;
             @include user-select(none);
         }
     }
+
 }
