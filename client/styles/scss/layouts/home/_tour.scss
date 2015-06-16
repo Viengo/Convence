@@ -29,6 +29,7 @@
                 text-align: center;
             }
         }
+
         .wave{
             height: 58px;
             background-image: url("../../images/backgrounds/shape.png");
@@ -52,6 +53,7 @@
                 font-size: 30px;
                 line-height: 115px;
             }
+
             &:hover{
                 @include background-image(radial-gradient(top, rgba(#f6f6f6, 1) 0, rgba(#b8babb, 0.6) 100%));
             }

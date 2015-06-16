@@ -7424,7 +7424,7 @@ a, a:hover {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-.sign-up form .input-container span {
+.sign-up form .input-container a {
   position: absolute;
   top: 20px;
   right: 10px;
@@ -7438,7 +7438,7 @@ a, a:hover {
   user-select: none;
 }
 @media (max-width: 767px) {
-  .sign-up form .input-container span {
+  .sign-up form .input-container a {
     right: 5px;
   }
 }
@@ -7598,9 +7598,8 @@ footer p {
   display: block;
 }
 .home .sign-in h2 {
-  background-color: #1769a4;
   font-size: 43.2px;
-  line-height: 60px;
+  line-height: 61px;
 }
 @media (max-width: 767px) {
   .home .sign-in h2 {
@@ -7611,8 +7610,13 @@ footer p {
 @media (max-width: 600px) {
   .home .sign-in h2 {
     font-size: 28px;
-    line-height: 30px;
+    line-height: 50px;
   }
+}
+.home .sign-in h2 span {
+  padding: 21px 0;
+  -webkit-box-shadow: inset 0px 242px 0px #1769a4, 20px 0px 0px #1769a4;
+  box-shadow: inset 0px 242px 0px #1769a4, 20px 0px 0px #1769a4;
 }
 .home .sign-in ul {
   margin-bottom: 0;
@@ -7848,11 +7852,12 @@ footer p {
   }
 }
 .home .twitts h2 {
-  margin: 0;
+  margin: 10px 0 0;
   font-size: 24px;
 }
 @media (max-width: 767px) {
   .home .twitts h2 {
+    margin: 20px 0 0;
     font-size: 48px;
   }
 }
@@ -7863,7 +7868,7 @@ footer p {
 }
 @media (max-width: 767px) {
   .home .twitts .reviews {
-    padding: 0 40px;
+    padding: 40px;
   }
 }
 @media (max-width: 600px) {
@@ -7872,7 +7877,7 @@ footer p {
   }
 }
 .home .twitts .reviews figure {
-  margin-top: 32px;
+  margin-top: 34px;
 }
 .home .twitts .reviews figure img {
   width: 67px;

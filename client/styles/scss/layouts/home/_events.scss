@@ -12,6 +12,7 @@
         @include breakpoint(extra-small) {
             padding: 50px 15px 105px;
         }
+
         h2 {
             margin-bottom: 0;
             font-size: 36px;
@@ -20,6 +21,7 @@
             }
         }
     }
+
     .wrapper {
         margin: 0 auto;
         font-size: 0;

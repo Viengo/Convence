@@ -17,9 +17,10 @@
     }
 
     h2 {
-        margin: 0;
+        margin: 10px 0 0;
         font-size: 24px;
         @include breakpoint(extra-small) {
+            margin: 20px 0 0;
             font-size: 48px;
         }
         @include breakpoint(s-extra-small) {
@@ -30,14 +31,14 @@
     .reviews {
 
         @include breakpoint(extra-small) {
-            padding: 0 40px;
+            padding: 40px;
         }
         @include breakpoint(s-extra-small) {
             padding: 0 15px;
         }
 
         figure {
-            margin-top: 32px;
+            margin-top: 34px;
 
             img {
                 width: 67px;
@@ -93,6 +94,7 @@
                     background-color: #f7f8f8;
                     @include transform(rotate(45deg));
                 }
+
                 p {
                     margin: 0;
                     font-family: "Open sans";
@@ -136,6 +138,7 @@
                 }
 
             }
+
             &.right {
 
                 img {

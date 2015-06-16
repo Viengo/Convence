@@ -2,16 +2,20 @@
     display: block;
 
     h2 {
-        background-color: #1769a4;
         font-size: 43.2px;
-        line-height: 60px;
+        line-height: 61px;
         @include breakpoint(extra-small) {
             font-size: 38px;
             text-align: center;
         }
         @include breakpoint(s-extra-small) {
             font-size: 28px;
-            line-height: 30px;
+            line-height: 50px;
+        }
+
+        span{
+            padding: 21px 0;
+            @include box-shadow(inset 0px 242px 0px rgba(#1769a4, 1),20px 0px 0px rgba(#1769a4, 1));
         }
     }
 
@@ -49,6 +53,7 @@
                     font-size: 14px;
                     line-height: 60px;
                 }
+
                 span {
                     float: left;
                     width: 48px;
@@ -94,10 +99,12 @@
                     }
                 }
             }
+
             &:nth-child(4) {
                 border: none;
                 background-image: none;
                 @include box-shadow(none);
+
                 p {
                     margin: 0;
                     font-size: 13px;
@@ -111,6 +118,7 @@
                     }
                 }
             }
+
             &:nth-child(5) {
                 a > span {
                     background-color: #3e9ee3;
