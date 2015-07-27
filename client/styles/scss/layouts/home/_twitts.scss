@@ -64,6 +64,7 @@
                 float: right;
                 z-index: 1;
                 width: 63.05%;
+                min-height: 110px;
                 padding: 15px 10px 15px 15px;
                 border: 1px solid #d4d4d4;
                 background-color: #f7f8f8;
@@ -122,6 +123,8 @@
 
                     &::after {
                         left: -8px;
+                        border-bottom: 1px solid #d4d4d4;
+                        border-left: 1px solid #d4d4d4;
                         @include breakpoint(extra-small) {
                             top: 55px;
                             left: -15px;
@@ -146,11 +149,12 @@
                 }
 
                 figcaption {
-
                     float: left;
 
                     &::after {
                         right: -8px;
+                        border-top: 1px solid #d4d4d4;
+                        border-right: 1px solid #d4d4d4;
                     }
                 }
             }

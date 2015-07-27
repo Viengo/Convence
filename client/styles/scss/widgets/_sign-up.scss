@@ -1,5 +1,5 @@
 .sign-up {
-    display: none;
+    //display: none;
     max-width: 530px;
     margin: 0 auto;
     padding: 100px 15px 180px;
@@ -8,9 +8,10 @@
         padding: 50px 15px 100px;
     }
 
-    .button-registration {
+    .blue {
+        width: 50%;
 
-        @include breakpoint(s-extra-small){
+        @include breakpoint(s-extra-small) {
             font-size: 13px;
         }
 
@@ -41,10 +42,16 @@
 
             &:nth-child(3) {
                 margin-right: 2%;
+                @include breakpoint(extra-small) {
+                    margin-right: 0;
+                }
             }
 
             &:nth-child(3), &:nth-child(4) {
                 width: 49%;
+                @include breakpoint(extra-small) {
+                    width: 100%;
+                }
             }
 
             input {
@@ -65,10 +72,10 @@
                     color: #061b2a;
                 }
 
-                &:focus{
+                &:focus {
                     border-color: #66afe9;
                     outline: 0;
-                    @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6));
+                    @include box-shadow(inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6));
                 }
             }
 
@@ -78,14 +85,25 @@
                 right: 10px;
                 width: 18px;
                 height: 18px;
+                outline: none;
                 background-repeat: no-repeat;
                 @include user-select(none);
-                @include breakpoint(extra-small){
+                @include breakpoint(extra-small) {
                     right: 5px;
                 }
             }
-        }
 
+            .popover {
+                max-width: 170px;
+                background-color: #f7f8f8;
+                font-family: "Open sans";
+                font-size: 13px;
+
+                &.left {
+                    margin-left: -20px;
+                }
+            }
+        }
 
         button {
             float: right;
@@ -96,7 +114,7 @@
 
         }
 
-        .button {
+        .gray {
             display: inline-block;
             margin-top: 40px;
             padding: 0 43px;

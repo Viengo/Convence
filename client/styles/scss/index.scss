@@ -16,13 +16,11 @@
 @include all-sign-up-sprites;
 
 //fonts
-@import "fonts/open-sans";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600);
 @import "fonts/helvetica";
 
 //components
-@import "components/logo";
 @import "components/button";
-@import "components/button-registration";
 
 //widgets
 @import "widgets/sign-up";

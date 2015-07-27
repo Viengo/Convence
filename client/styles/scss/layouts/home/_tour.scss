@@ -24,7 +24,7 @@
                 text-align: center;
             }
             @include breakpoint(s-extra-small){
-                font-size: 35px;
+                font-size: 26px;
                 line-height: 40px;
                 text-align: center;
             }
@@ -42,7 +42,6 @@
         .button{
             background-color: #ffffff;
             line-height: 58px;
-            @include background-image(radial-gradient(top, rgba(#f6f6f6, 0.6) 0, rgba(#b8babb, 1) 100%));
             @include breakpoint(small){
                 margin-top: 55px;
                 font-size: 30px;
@@ -53,9 +52,10 @@
                 font-size: 30px;
                 line-height: 115px;
             }
-
-            &:hover{
-                @include background-image(radial-gradient(top, rgba(#f6f6f6, 1) 0, rgba(#b8babb, 0.6) 100%));
+            @include breakpoint(s-extra-small){
+                font-size: 24px;
+                line-height: 80px;
             }
+
         }
 }
